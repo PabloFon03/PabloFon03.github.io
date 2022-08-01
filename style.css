@@ -4,8 +4,11 @@
 }
 
 html {
-    background-color: black;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
 }
 
 .Game {
