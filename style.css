@@ -11,7 +11,36 @@ body {
     background-color: black;
 }
 
+p {
+    color: white;
+}
+
+img {
+    image-rendering: optimizeSpeed;
+    /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox                        */
+    image-rendering: -o-crisp-edges;
+    /* Opera                          */
+    image-rendering: -webkit-optimize-contrast;
+    /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;
+    /* Chrome */
+    image-rendering: optimize-contrast;
+    /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE8+                           */
+}
+
 .Game {
     width: 20%;
     padding: 0% 10%;
+}
+
+.Game img {
+    width: 100%;
+}
+
+.Game .Overlay {
+    content: url("img/OverlayTV.png");
 }
