@@ -1,0 +1,1 @@
+function JumpToSection(_sectionId) { window.location.hash = _sectionId; }
